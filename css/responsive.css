@@ -1,0 +1,209 @@
+/* Responsive CSS for a unique project */
+@media (max-width: 1400px) {
+  .background-banner-contact {
+    background-image: url(../images/contact-img-medium.jpg);
+    height: 70vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: baseline;
+    gap: 70px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .background-banner-contact {
+    background-image: url(../images/contact-img-tablet.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 40vh;
+  }
+}
+
+@media (max-width: 992px) {
+  .group {
+    grid-template-columns: 1fr;
+  }
+
+  .group-society {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content-world .container .group-wrapper:nth-child(2) {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 530px) {
+  .background-banner-contact {
+    background-image: url(../images/contact-img-mobile.jpg);
+    background-size: cover;
+    height: 40vh;
+  }
+}
+
+.container-mob {
+  padding: 0px 25px;
+}
+.full-content-banner-mob {
+  margin-top: 42px;
+  height: calc(100vh - 42px);
+}
+.background-banner-mob {
+  background-image: url("../images/banner_mobile_img.png");
+  background-size: cover;
+  width: 100%;
+  height: 45vh;
+}
+.text-content-banner-mob {
+  background: transparent linear-gradient(116deg, #78192b 0%, #31040d 100%) 0%
+    0% no-repeat padding-box;
+  height: 50vh;
+  padding: 50px 50px;
+
+  color: #fff;
+
+  font-size: 32px;
+  font-weight: 300;
+  line-height: 35px;
+}
+.subtitle-banner-mob {
+  font-size: 16px;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.img-jamile-width-mob {
+  width: 100%;
+}
+.background-metodo-mob {
+  background-image: url("../images/quatro_cs_mobile_img@2x.jpg");
+  background-size: cover;
+  width: 100%;
+  padding: 50px 0px;
+}
+.img-metodo-mob {
+  width: 300px;
+}
+.align-metodo-mob {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.topicos-quatro-mob {
+  font-size: 26px;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.bg-branding-mob {
+  background-image: url(../images/branding_mobile_img@2x.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 400px;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-posicionamento-mob {
+  background-image: url(../images/posicionamento_mobile_img@2x.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 400px;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-marketing-mob {
+  background-image: url(../images/marketing_mobile_img@2x.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 400px;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bg-plano-mob {
+  background-image: url(../images/plano_de_marketing_mob_img@2x.jpg);
+  width: 100%;
+  background-size: cover;
+  height: 400px;
+  padding: 70px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contato-mob {
+  padding: 20px 20px 40px 20px;
+  background-color: #ffffff;
+  border-radius: 30px;
+}
+.main-footer-mob {
+  background: transparent linear-gradient(181deg, #78192b 0%, #31040d 100%) 0%
+    0% no-repeat padding-box;
+  color: #fff;
+  padding: 50px 25px 25px 25px;
+  width: 100%;
+}
+.title-contato {
+  margin-top: 10px;
+}
+.align-footer-mob {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.main-footer-mob a {
+  text-decoration: none;
+  color: #fff;
+}
+.main-footer-mob i {
+  font-size: 22px;
+}
+.width-logo-footer-mob {
+  width: 375px;
+}
+.topic-mob {
+  color: #78192b;
+  font-weight: 600;
+}
+@media (max-width: 768px) {
+  .logo {
+    width: 200px;
+  }
+  .second-top {
+    padding: 23px 0px;
+  }
+  .individual-post {
+    margin-top: 42px;
+  }
+  .blog-views {
+    margin-top: 42px;
+  }
+  .box-mosaico-desk {
+    display: none !important;
+  }
+  .box-mosaico-mobile {
+    display: block !important;
+  }
+  .box-mosaico-mobile img {
+    height: 170px !important;
+    object-fit: cover !important;
+  }
+  .text-banner {
+    font-size: 30px;
+    line-height: 1.5;
+    padding: 15px;
+  }
+  .content-activities-grid {
+    overflow-x: scroll;
+  }
+}

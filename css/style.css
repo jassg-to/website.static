@@ -1,0 +1,952 @@
+/* Main CSS for a unique project */
+
+@font-face {
+  font-family: "NexaBold";
+  src: url("../fonts/Nexa\ Bold.otf");
+}
+@font-face {
+  font-family: "NexaLight";
+  src: url("../fonts/Nexa\ Light.otf");
+}
+@font-face {
+  font-family: "NexaRegular";
+  src: url("../fonts/Nexa\ Regular.otf");
+}
+@font-face {
+  font-family: "NexaFreeBold";
+  src: url("../fonts/Nexa_Free_Bold.otf");
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  color: #434939;
+}
+.second-top {
+  background-color: #fff;
+  box-shadow: 0px 3px 6px #00000029;
+
+  padding: 11px 0px;
+}
+.logo {
+  width: 300px;
+}
+.itens-menu li a,
+.itens-menu li a:hover,
+.itens-menu li a:active,
+.itens-menu li a:focus .itens-menu li a:visited {
+  color: #434939;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+#barra_menu {
+  font-size: 30px;
+  color: #6880a6;
+}
+.blue-line {
+  background-color: #728cb5;
+  height: 5px;
+  width: 100%;
+}
+.main-footer {
+  background-color: #fff;
+  color: #575757;
+  padding: 100px 0px;
+}
+.main-footer a {
+  text-decoration: none;
+  color: #fff;
+}
+.main-footer i {
+  font-size: 30px;
+  color: #3b697f;
+  margin-top: 10px;
+}
+.title-footer {
+  color: #728cb5;
+  font-weight: bold;
+}
+.footer {
+  background-color: #000;
+  padding: 10px 0px;
+  color: #fff;
+  font-size: 14px;
+}
+.footer img {
+  width: 250px;
+  margin-left: 5px;
+}
+.img-clixs {
+  width: 93px;
+
+  margin-top: 7px;
+}
+.powered-by {
+  font-weight: 200;
+  font-size: 12px;
+}
+.footer-contato {
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.footer-tel {
+  letter-spacing: 1px;
+}
+.footer-copyright {
+  font-size: 14px;
+}
+
+.background-banner-movement,
+.background-banner-groups,
+.background-banner-federations,
+.background-banner-activities,
+.background-banner-book,
+.background-banner-library,
+.background-banner-blog,
+.background-banner-contact {
+  position: relative;
+}
+
+.background-banner-movement::before,
+.background-banner-groups::before,
+.background-banner-federations::before,
+.background-banner-activities::before,
+.background-banner-book::before,
+.background-banner-library::before,
+.background-banner-blog::before,
+.background-banner-contact::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.background-banner {
+  background-image: url("../images/banner_img.jpg");
+  width: 100%;
+  height: 70vh;
+  background-size: cover;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-banner {
+  color: #434939;
+  text-align: center;
+  font-size: 52px;
+  font-weight: 300;
+  line-height: 1.4;
+  font-family: "NexaRegular";
+}
+.t-banner {
+  color: #728cb5;
+  font-family: "NexaBold";
+}
+.title-main-site {
+  color: #728cb5;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "NexaFreeBold";
+}
+.title-main-site-white {
+  color: #fff;
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "NexaFreeBold";
+}
+.text-about {
+  color: #3b697f;
+  font-size: 18px;
+}
+.btn-default-site {
+  background-color: #728cb5;
+  border-radius: 25px;
+  padding: 25px 0px;
+  width: 275px;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-default-site {
+  background-color: #728cb5;
+  border-radius: 25px;
+  padding: 25px 0px;
+  width: 275px;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.btn-default-site-border {
+  background-color: transparent;
+  border: 2px solid #fff;
+  border-radius: 25px;
+  padding: 25px 0px;
+  width: 275px;
+
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.content-spiritism {
+  flex: 1;
+  background: transparent linear-gradient(122deg, #728cb5 0%, #415f90 100%) 0%
+    0% no-repeat padding-box;
+}
+.text-spiritism {
+  padding: 100px;
+  font-size: 18px;
+  color: #fff;
+}
+.img-spiritism {
+  flex: 1;
+  background-image: url("../images/spiritism_img.jpg");
+  background-size: cover;
+  width: 100%;
+}
+.img-spiritism-mob {
+  background-image: url("../images/spiritism_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+.img-activities {
+  object-fit: cover;
+  width: 100%;
+}
+.content-activities {
+  flex: 1;
+}
+.text-activities {
+  padding: 0px 50px;
+  font-size: 18px;
+  color: #434939;
+}
+.background-contato {
+  background-image: url("../images/bg_form_img.jpg");
+  width: 100%;
+  background-size: cover;
+  padding: 85px 0px;
+}
+.contato {
+  padding: 45px 80px 45px 80px;
+  background-color: #ffffff;
+  border-radius: 50px;
+}
+.title-contato {
+  font-size: 28px;
+  margin-bottom: 35px;
+  margin-top: 30px;
+  color: #728cb5;
+  font-family: "NexaBold";
+}
+.label-form {
+  margin-bottom: 10px;
+  color: #8b8b8b;
+  font-weight: 600;
+}
+.asterisk {
+  color: #8b8b8b;
+  font-weight: bold;
+}
+.observations {
+  font-weight: 600;
+  color: #8b8b8b;
+  font-size: 14px;
+}
+.input-form {
+  position: relative;
+  background-color: #ededed;
+  box-shadow: none;
+  border: #ededed;
+  border-radius: 10px;
+  padding: 12px;
+  width: 100%;
+  line-height: 0px;
+  text-align: left;
+  margin-bottom: 10px;
+  color: #3e3e3e;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  letter-spacing: 0.4px;
+}
+
+.input-form::placeholder textarea.form-control {
+  max-width: 100% !important;
+  min-width: 100% !important;
+  height: 100px !important;
+  resize: none;
+}
+.input_default {
+  box-shadow: none;
+  border: none;
+  color: #3e3e3e;
+  border-radius: 10px;
+  background-color: #ededed;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 400;
+  opacity: 1;
+  letter-spacing: 0.4px;
+  resize: none;
+}
+.input-form::placeholder,
+.input_default::placeholder {
+  color: #8b8b8b;
+  font-weight: 400;
+  opacity: 0.6;
+  font-style: italic;
+}
+.btn-form {
+  background-color: #728cb5;
+  color: #ffffff;
+  box-shadow: 0px 4px 10px #1d2b542e;
+  font-size: 18px;
+  font-weight: 600;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 55px;
+}
+.background-banner-about {
+  background-image: url("../images/about_us_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-banner-telas {
+  color: #ffffff;
+  font-size: 42px;
+  font-weight: bold;
+  font-family: "NexaBold";
+  z-index: 1;
+}
+.subtitle-main-site {
+  color: #728cb5;
+  font-size: 26px;
+  font-family: "NexaBold";
+}
+.img-organization {
+  background-image: url("../images/organization_img.jpg");
+  background-size: cover;
+  width: 100%;
+
+  flex: 1;
+}
+.img-organization-mob {
+  background-image: url("../images/organization_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 250px;
+}
+.content-canada {
+  background-color: #728cb5;
+  color: #fff;
+  padding: 50px 0px;
+}
+.content-world {
+  background-color: #d9e5f8;
+  color: #3b697f;
+  padding: 50px 0px;
+}
+.background-banner-spiritism {
+  background-image: url("../images/the_spirit_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.text-blue-bold {
+  color: #728cb5;
+}
+.background-banner-blog {
+  background-image: url("../images/news_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+  margin-top: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.background-banner-book {
+  background-image: url("../images/book_store_img_flipped.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.background-banner-library {
+  background-image: url("../images/library_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.background-banner-activities {
+  background-image: url("../images/activitire_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.content-activities-grid {
+  display: grid;
+  grid-template-columns: 220px 240px 1fr;
+}
+.content-activities-grid-2 {
+  grid-template-columns: 220px 240px;
+}
+.activities-about {
+  display: block;
+  color: #728cb5;
+  font-weight: 700;
+  font-size: 14px;
+}
+.content-activities-blue-1 {
+  background-color: #e2e9f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-blue-2 {
+  background-color: #e2e9f4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-blue-3 {
+  background-color: #e2e9f4;
+  padding: 5px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-grey-1 {
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-grey-2 {
+  background-color: #ededed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-grey-3 {
+  background-color: #ededed;
+  padding: 5px;
+  width: 100%;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-grey-4 {
+  background-color: #ededed;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6880a6;
+  font-weight: bold;
+}
+.content-activities-blue-4 {
+  background-color: #e2e9f4;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6880a6;
+  font-weight: bold;
+}
+.background-banner-contact {
+  background-image: url("../images/contact-img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 60vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.title-canada,
+.title-world {
+  font-family: "NexaFreeBold";
+}
+@media only screen and (min-width: 768px) {
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+}
+
+.item-dropdown {
+  font-family: "Open Sans";
+  font-weight: 400 !important;
+  color: #434939 !important;
+  font-size: 16px !important;
+}
+.item-dropdown-mob {
+  padding: 15px !important;
+  font-weight: 600 !important;
+  color: #8699b7 !important;
+}
+.padding_lateral_mosaico {
+  padding: 0 5px;
+}
+.padding_superior_mosaico {
+  padding: 5px 0px;
+}
+.box-mosaico-mobile {
+  display: none !important;
+}
+/* BLOG */
+.box-card-blog {
+  box-shadow: 0px 0px 5px 0px rgb(224 224 224);
+}
+.imagem_feed img {
+  height: 220px;
+  width: 100%;
+}
+.img-blog {
+  width: 100%;
+  object-fit: cover;
+  height: 200px;
+}
+.box-card-blog .div-text {
+  padding: 20px;
+}
+.div-text {
+  max-height: 180px;
+  min-height: 180px;
+}
+.title-blog-index {
+  font-family: "NexaBold";
+  color: #3b697f;
+  font-weight: bold;
+  line-height: 20px;
+  text-align: center;
+  margin: 10px 0px;
+  letter-spacing: 1px;
+}
+.text-blog-index {
+  font-family: "Open Sans";
+  color: #242424;
+  line-height: 20px;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 16px;
+}
+.more-blog {
+  display: flex;
+  justify-content: center;
+
+  font-weight: 400;
+}
+.more-blog a {
+  color: #434939;
+}
+.more-blog i {
+  color: #3b697f;
+  font-size: 18px;
+}
+.blog-views {
+  margin-top: 75px;
+}
+.pagination > li > a,
+.pagination > li > span {
+  color: #3b697f;
+}
+.individual-post {
+  margin-top: 91px;
+}
+.individual-post img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+}
+.desc-post,
+.desc-post p,
+.desc-post a,
+.desc-post span,
+.desc-post label {
+  font-family: "Open Sans";
+  line-height: 25px;
+  color: #000;
+}
+.titulo-post {
+  font-family: "NexaBold";
+  font-weight: 600;
+  letter-spacing: 0px;
+  font-size: 26px;
+  color: #6880a6;
+}
+.arrow-right i {
+  font-size: 18px;
+  color: #6880a6;
+}
+.arrow-left i {
+  font-size: 18px;
+  color: #6880a6;
+}
+.fontdatapost {
+  color: #6880a6;
+}
+.align-left-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.align-right-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.img-width {
+  width: 200px !important;
+}
+.navbar-right .dropdown-menu {
+  right: -255px;
+  left: auto;
+}
+.currently_idiom {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 1px;
+}
+.bandeiraativa {
+  cursor: pointer;
+}
+.bandeiraativa:hover {
+  border-radius: 50% 50% 0 0;
+  box-shadow: 0px -8px 10px #0002;
+}
+.bandeiraativa:hover .bandeiradois img {
+  border-radius: 0 0 50% 50%;
+  box-shadow: 0px 8px 10px #0002;
+}
+.bandeiraativa .bandeiradois {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  margin-left: -9px;
+}
+.bandeiraativa .bandeiradois a:hover {
+  text-decoration: none;
+  border-bottom: none;
+}
+.bandeiraativa:hover .bandeiradois {
+  display: block !important;
+  cursor: pointer;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-bottom: 1px;
+}
+
+.bandeiraativa:hover .currently_idiom {
+  border-radius: 0;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  padding-top: 1px;
+}
+.background-banner-federations {
+  background-image: url("../images/federetions_img.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.background-banner-groups {
+  background-image: url("../images/spiritims_groups_img_2.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50vh;
+  margin-top: 91px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.background-banner-movement {
+  background-image: url("../images/spiritism_movement.jpg");
+  background-size: cover;
+  width: 100%;
+  height: 50vh;
+
+  margin-top: 91px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-wrapper {
+  display: flex;
+}
+
+.icons {
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+}
+
+.icons .mt10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #000;
+}
+
+.icons-society .mt10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+  color: #3b697f;
+}
+
+.icons-society a::before {
+  content: url(../images/facebook\ -blue.svg);
+  position: relative;
+}
+
+.icons-society a:hover {
+  filter: brightness(0.9);
+}
+
+.icons a::before {
+  content: url(../images/facebook.svg);
+  position: relative;
+}
+
+.icons a:nth-child(2)::before {
+  content: url(../images/instagram.svg);
+  position: relative;
+}
+
+.icons a:nth-child(3)::before {
+  content: url(../images/globe.svg);
+  position: relative;
+}
+
+.icons-form .mt10,
+.icons-instagram .mt10 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0px;
+}
+
+.icons-form a,
+.icons-instagram a {
+  color: #fff;
+}
+
+.icons-form:hover,
+.icons-instagram:hover {
+  filter: brightness(0.9);
+}
+
+.icons-form a::before {
+  content: url(../images/facebook\ -white.svg);
+  position: relative;
+}
+
+.icons-instagram a::before {
+  content: url(../images/instagram-white.svg);
+  position: relative;
+}
+
+.contact {
+  width: 35%;
+}
+
+.link {
+  text-decoration: none;
+  color: #3b697f;
+}
+
+.link-form a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.link-form a:hover,
+.link-form a:focus {
+  color: #dbdbdb;
+}
+
+.container-group {
+  max-width: 1350px;
+  margin: 0 auto;
+  padding-inline: 15px;
+}
+
+.content-canada .container-group .group .col-md-3 {
+  width: 100%;
+}
+
+.col-md-3,
+.col-md-5 {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.group,
+.group-society {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.group-wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 35ch;
+  gap: 10px;
+  margin-bottom: 50px;
+}
+
+.group-wrapper-sx {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 100%;
+  margin-right: 100px;
+}
+
+.content-world .container .group-wrapper:nth-child(2) {
+  margin-left: 70px;
+}
+
+.social-mideas {
+  display: flex;
+  justify-items: flex-start;
+  gap: 20px;
+}
+/* 
+@media (max-width: 1200px) {
+  /* .content-canada .container-grou .group {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start ;
+  }
+} */ 
+
+@media (max-width: 992px) {
+  .group-society {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content-world .container .group-wrapper:nth-child(2) {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 530px) {
+  .content-canada .container-group .text-left {
+    text-align: center;
+  }
+}
+
+/* FIXES FORM ON MOBILE */
+@media (max-width: 992px) {
+  .contato {
+    padding: 30px;
+  }
+
+  .contato form label {
+    text-align: left !important;
+  }
+
+  .form-mobile-direction {
+    display: block;
+  }
+
+  .form-mobile-text {
+    text-align: left !important;
+  }
+
+  .btn-mobile-fix {
+    margin-top: 35px;
+  }
+}

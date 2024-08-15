@@ -1,0 +1,285 @@
+/* default classes for all projects */
+
+.mt5{margin-top: 5px;}
+.mt10{margin-top: 10px;}
+.mt20{margin-top: 20px;}
+.mt30{margin-top: 30px;}
+.mt40{margin-top: 40px;}
+.mt50{margin-top: 50px;}
+.mt60{margin-top: 60px;}
+.mt70{margin-top: 70px;}
+.mt80{margin-top: 80px;}
+.mt90{margin-top: 90px;}
+.mt100{margin-top: 100px;}
+
+.mb5{margin-bottom: 5px;}
+.mb10{margin-bottom: 10px;}
+.mb20{margin-bottom: 20px;}
+.mb30{margin-bottom: 30px;}
+.mb40{margin-bottom: 40px;}
+.mb50{margin-bottom: 50px;}
+.mb60{margin-bottom: 60px;}
+.mb70{margin-bottom: 70px;}
+.mb80{margin-bottom: 80px;}
+.mb90{margin-bottom: 90px;}
+.mb100{margin-bottom: 100px;}
+
+.ml5{margin-left: 5px;}
+.ml10{margin-left: 10px;}
+.ml20{margin-left: 20px;}
+.ml30{margin-left: 30px;}
+.ml40{margin-left: 40px;}
+.ml50{margin-left: 50px;}
+.ml60{margin-left: 60px;}
+.ml70{margin-left: 70px;}
+.ml80{margin-left: 80px;}
+.ml90{margin-left: 90px;}
+.ml100{margin-left: 100px;}
+
+.mr5{margin-right: 5px;}
+.mr10{margin-right: 10px;}
+.mr20{margin-right: 20px;}
+.mr30{margin-right: 30px;}
+.mr40{margin-right: 40px;}
+.mr50{margin-right: 50px;}
+.mr60{margin-right: 60px;}
+.mr70{margin-right: 70px;}
+.mr80{margin-right: 80px;}
+.mr90{margin-right: 90px;}
+.mr100{margin-right: 100px;}
+
+.c_fff{
+	color: #fff;
+}
+.c_000{
+	color: #000;
+}
+
+.d_flex{
+	display: flex;
+}
+.ai_center{
+	display: flex;
+	align-items: center;
+}
+.jc_center{
+	display: flex;
+	justify-content: center;
+}
+.jc_between{
+	display: flex;
+	justify-content: space-between;
+}
+.fd_column{
+	flex-direction: column;
+	gap: 20px;
+}
+.fd_row{
+	flex-direction: row;
+}
+.f_1{
+	flex: 1;
+}
+.f_2{
+	flex: 2;
+}
+
+html{
+	height: 100%;
+}
+body{
+	height: 100%;
+
+	background-color:#fff;
+	color: #000; 
+
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:visited{
+	line-height: 0px;
+	text-decoration: none;
+	outline: none;
+}
+button,
+button:hover,
+button:focus,
+button:active,
+button:visited{
+	outline: none;
+}
+input,
+input:hover,
+input:focus,
+input:active,
+input:visited{
+	outline: none;
+}
+textarea,
+textarea:hover,
+textarea:focus,
+textarea:active,
+textarea:visited{
+	outline: none;
+}
+img,
+img:focus,
+img:active,
+img:hover,
+img:visited{
+	outline: none;
+}
+
+/* BUTTON WHATSAPP ABSOLUTE */ 
+.button_absolute_whatsapp, .button_absolute_whatsapp:hover {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 10px;
+    left: 10px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 1px 1px 2px #888;
+    z-index: 1000;
+    border: 3px solid #fff;
+}
+.button_absolute_whatsapp i {
+    margin-top: 7px;
+    color: #fff !important;
+    font-size: 39px;
+    
+}
+.button_absolute_whatsapp:focus{
+	border: 3px solid #fff;
+}
+
+/* BOOTSTRAP CUSTOM CLASSES */
+.navbar-toggle {
+	position: absolute;
+    background-color: transparent;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    right: 15px;
+    top: 20px;
+    padding: 10px;
+    margin: 0px;
+}
+.nav>li>a:hover{
+	background-color: transparent;
+}
+.navbar{
+	margin-bottom: 0px;
+	border: none;
+}
+.form-control:focus{
+	border: none;
+	box-shadow: none;
+}
+
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+	transition: 0.5s;
+	z-index: 9999;
+	opacity: 0.95;
+}
+.list_overlay {
+	margin: 0;
+	padding: 0;
+}
+.overlay-content {
+	position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 83px;
+}
+.overlay a {
+	text-decoration: none;
+	font-size: 18px;
+	color: #6880A6;
+	font-weight: bold;
+	display: block;
+	transition: 0.3s;
+	line-height: 1;
+}
+.overlay a:hover, .overlay a:focus {
+	color: #485974;
+}
+
+.overlay .closebtn {
+	position: absolute;
+	top: 22px;
+	right: 16px;
+	font-size: 30px;
+	padding: 10px;
+	z-index: 999;
+}
+
+.list_overlay > li {
+	padding-top: 25px;
+    padding-bottom: 25px;
+	scroll-padding-bottom: 15px;
+}
+
+/* EMAIL CONFIRMATION MODAL */
+.t-modal .modal-content{
+	border-radius: 0px;
+	padding: 25px;
+}
+.t-modal .modal-header{
+	border: none;
+}
+.t-modal .modal-body{
+	color: #535353;
+	text-align: center;
+	font-family: 'Open Sans';
+	font-weight: 400;
+	font-size: 16px;
+	border: none;
+	margin: 0px 25px 30px 25px;
+}
+.modal-dialog{
+	padding-top: 15% !important;
+}
+.style_modal {
+	background-color: #0000008c !important;
+}
+.close {
+    float: right;
+	margin-top: -30px;
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 1;
+    color: #78192B;
+    text-shadow: 0 1px 0 #fff;
+    filter: alpha(opacity=20);
+    opacity: 1;
+}
+.close:hover,
+.close:focus {
+	filter: brightness(.9);
+    color: #78192B;
+}
+.modal__title {
+	color: #728cb5;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: "NexaFreeBold";
+	margin-bottom: 20px;
+}
