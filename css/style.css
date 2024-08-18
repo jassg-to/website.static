@@ -902,14 +902,14 @@ body {
   justify-items: flex-start;
   gap: 20px;
 }
-/* 
+/*
 @media (max-width: 1200px) {
   /* .content-canada .container-grou .group {
     display: flex;
     flex-direction: column;
     align-items:flex-start ;
   }
-} */ 
+} */
 
 @media (max-width: 992px) {
   .group-society {
