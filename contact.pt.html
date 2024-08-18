@@ -1,0 +1,513 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Joanna de Ângelis</title>
+        <link rel="shortcut icon" href="images/favicon_img.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/template.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!-- Open Sans -->
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> <!-- Line Awesome -->
+
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        
+    </head>
+
+    <body>
+
+        <header>
+            <nav class="navbar st-navbar navbar-fixed-top">
+                <div class="second-top">
+                    <div class="container">
+                        <div class="ai_center jc_between">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="openNav()">
+                                    <i class="las la-bars" id="barra_menu"></i>
+                                </button>
+                                <a href="index.php">
+                                    <img class="logo" src="images/logotipo_joanna_img.png">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="st-navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right itens-menu" style="display: flex; align-items: center;">
+                                    <li><a href="about.php" class="links_topo">SOBRE NÓS</a></li>
+                                    <li class="dropdown">
+                                        <a href="spiritism.php" class=" links_topo dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ESPIRITISMO</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="spiritism.php" class="item-dropdown">A Filosofia Espírita ou Espiritismo</a></li>
+                                            <li><a href="movement.php" class="item-dropdown">Movimento Espírita</a></li>
+                                            <li><a href="groups.php" class="item-dropdown">Grupos, centros ou sociedades espíritas</a></li>								
+                                            <li><a href="federations.php" class="item-dropdown">Federações e Movimento</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="activities.php" class=" links_topo">ATIVIDADES</a></li>
+                                    <!-- <li><a href="bookstore.php" class="links_topo">LIVRARIA</a></li> -->
+                                    <!-- <li><a href="library.php" class="links_topo">BIBLIOTECA</a></li> -->
+                                    <!-- <li><a href="blog.php" class="links_topo">NOTÍCIAS</a></li> -->
+                                    <li><a href="contact.php" class="links_topo">CONTATO</a></li>
+                                    <li id="" class="hidden-xs hidden-sm">
+                                        <div class="bandeiraativa">
+                                            <img class="currently_idiom" src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                            <div class="bandeiradois" style="z-index: 999;">
+                                                <a onclick="changeEn()">
+                                                    <img class="option_idiom" src="images/bandeira_usa.png" style="width: 30px; height: 30px; margin-left: 9px; margin-top: 0px;"> 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="las la-times"></i></a>
+                    <div class="overlay-content">
+                        <ul class="list_overlay">
+                            <li><a href="about.php" class="links_topo topic-mob" onclick="closeNav()">SOBRE NÓS</a></li>
+                            <li>
+                                <div><a href="spiritism.php" class=" links_topo topic-mob" onclick="closeNav()" style="padding: 25px 0;">ESPIRITISMO</a></div>
+                                <div><a href="spiritism.php" class="item-dropdown-mob">A Filosofia Espírita ou Espiritismo</a></div>
+                                <div><a href="movement.php" class="item-dropdown-mob">Movimento Espírita</a></div>
+                                <div><a href="groups.php" class="item-dropdown-mob">Grupos, centros ou sociedades espíritas</a></div>
+                                <div><a href="federations.php" class="item-dropdown-mob">Federações e Movimento</a></div>
+                            </li>
+                            <li><a href="activities.php" class=" links_topo topic-mob" onclick="closeNav()">ATIVIDADES</a></li>
+                            <!-- <li><a href="bookstore.php" class="links_topo topic-mob" onclick="closeNav()">LIVRARIA</a></li> -->
+                            <!-- <li><a href="library.php" class="links_topo topic-mob" onclick="closeNav()">BIBLIOTECA</a></li> -->
+                            <!-- <li><a href="blog.php" class="links_topo topic-mob" onclick="closeNav()">NOTÍCIAS</a></li> -->
+                            <li><a href="contact.php" class="links_topo topic-mob" onclick="closeNav()">CONTATO</a></li>
+                            <li>
+                                <div style="display:flex;align-items:center;justify-content:center;gap:20px;padding:15px;">
+                                    <a onclick="changeEn()">
+                                        <img src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                    </a>
+                                    <a onclick="changePt()">
+                                        <img src="images/bandeira_usa.png" style="margin-left: 10px; width: 30px; height: 30px;"> 
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>						
+                </div>
+                
+            </nav>
+        </header>
+
+        <!-- CONFIRMAÇÃO DE ENVIO DO FORMULÁRIO -->
+        
+    
+<section id="banner-contact">
+  <div class="background-banner-contact">
+    <div class="text-banner-telas">
+      Entre em contato    </div>
+  </div>
+</section>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2886.9395421633226!2d-79.42971708414451!3d43.64942617912138!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b34566fdb774b%3A0x70e0d9eda83fabf6!2sJoanna%20de%20%C3%82ngelis%20Spiritist%20Study%20Group!5e0!3m2!1spt-BR!2sbr!4v1632479829360!5m2!1spt-BR!2sbr" width="100%" height="550" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+<section id="contato" class="">
+  <div class="background-contato" style="margin-top: -6px;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-offset-2 col-md-8 text-center">
+          <div class="contato">
+            <div class="col-md-12 text-center title-contato">
+              Entre em contato            </div>
+            <form id="form_recaptcha" class="contato-form" method="POST" action="email-send.php">
+              <div class="row">
+                <div class="col-md-3 text-right form-mobile-text">
+                  <label class="label-form" for="nome">Nome<span class="asterisk">*</span></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" name="nome" class="input-form" placeholder="Nome…" required>
+                </div>
+              </div>
+              <div class="row">
+                <div class="hidden-md hidden-lg"></div>
+                <div class="col-md-3 text-right form-mobile-text align-mob-left">
+                  <label class="label-form" for="email">Email<span class="asterisk">*</span></label>
+                </div>
+                <div class="col-md-9">
+                  <input type="email" name="email" class="input-form" placeholder="Email…" required>
+                </div>
+              </div>
+              <div class="row ai_center form-mobile-direction">
+                <div class="hidden-md hidden-lg"></div>
+                <div class="col-md-3 text-right form-mobile-text align-mob-left mt30mob">
+                  <label class="label-form" for="telefone">Número</label>
+                </div>
+                <div class="col-md-9">
+                  <input type="text" name="telefone" class="input-form phone_us" placeholder="Número…">
+                </div>
+              </div>
+              <div class="row  ai_center form-mobile-direction message">
+                <div class="hidden-md hidden-lg"></div>
+                <div class="col-md-3 text-right form-mobile-text align-mob-left mt30mob">
+                  <label class="label-form" for="mensagem">Mensagem</label>
+                </div>
+                <div class="col-md-9">
+                  <textarea rows="5" id="comment" name="comment" class="form-control input_default" placeholder="Escreva sua mensagem..."></textarea>
+                </div>
+              </div>
+              <div class="col-md-offset-3 col-md-9 text-left mt5">
+                <span class="asterisk">*</span><span class="observations">Campos obrigatórios</span>
+              </div>
+              <div class="g-recaptcha" data-sitekey="6LfKXYYdAAAAAGTH83c8jyfpWT8vnPT-C-Xvf747" data-callback="submitForm" data-size="invisible">
+              </div>
+              <div class="row mt70 btn-mobile-fix">
+                <div class="hidden-md hidden-lg"></div>
+                <div class="col-md-12 text-center">
+                  <input type="hidden" name="enviar_form" />
+                  <button type="button" onClick="executeCaptcha()" class="btn-form">Enviar</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="content-canada">
+    <div class="container-group">
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <i class="lab la-canadian-maple-leaf" style="font-size: 36px"></i>
+          <div class="title-canada" style="font-size: 26px">Grupos Espíritas no Canadá</div>
+        </div>
+      </div>
+      <div class="row mt30 mb10">
+        <div class="col-md-12 text-left">
+          <div style="font-family: 'NexaBold'; font-size: 24px;">Ontario</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-wrapper">
+          <div><strong>Joanna de Angelis Spiritist Study Group</strong></div>
+          <div>1357 B Dundas Street West Toronto - ON - M6J 1Y3</div>
+          <div><strong>Fone:</strong> +1 (416) 532-7896</div>
+          <div class="icons-form">
+            <a class="mt10" href=" https://www.facebook.com/jassgtoronto">Facebook</a>
+          </div>
+          <div class="icons-instagram"> 
+            <a class="mt10" href="https://www.instagram.com/joannadeangelisca/" target="_blank" rel="noreferrer noopener">Instagram</a>
+          </div>
+          <div class="link-form">
+            <a href="https://joannadeangelis.ca/" target="_blank" rel="noreferrer noopener"><strong>Website: </strong> joannadeangelis.ca</a>
+          </div>
+          <div class="link-form">
+            <a href="mailto:info@joannadeangelis.ca" target="_blank" rel="noreferrer noopener"><strong>Email: </strong> info@joannadeangelis.ca</a></a>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div><strong>Descanse no Caminho</strong></div>
+          <div>1268 St. Clair Ave. West, 2º andar Toronto - ON - M6E 1B9</div>
+          <div class="link-form">
+            <a href="restontheway.ca" target="_blank" rel="noreferrer noopener"><strong>Website: </strong>  restontheway.ca</a>
+          </div>
+        </div>
+
+        <div class="group-wrapper">
+          <div><strong>Toronto Spiritist Society</strong></div>
+          <div>261 Gerrard St East Toronto, ON M5A 2G1</div>
+          <div><strong>Fone:</strong>+1 (416) 723-2242</div>
+          <div class="link-form">
+            <a href="https://www.torontospiritistsociety.org/" target="_blank" rel="noreferrer noopener"><strong>Webmail: </strong> torontospiritistsociety.org</a>
+          </div>
+          <div class="link-form">
+            <a href="mailto:info@torontospiritistsociety.org" target="_blank" rel="noreferrer noopener"><strong>Email: </strong>info@torontospiritistsociety.org</a></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div>
+          <!-- <div class="row mt70 mb10">
+            <div class="col-md-12 text-left">
+              <div style="font-family: 'NexaBold'; font-size: 24px;"></div>
+            </div>
+          </div> -->
+          <div class="group-wrapper">
+            <div class="group-wrapper">
+              <div><strong>Grupo de Estudos Espíritas Paulo de Tarso</strong></div>
+              <div>Waterloo, Ontario · Cambridge, Ontario · Kitchener, Ontario</div>
+              <div class="icons-form">
+                <a class="mt10" href="https://www.facebook.com/groups/777520699267605/">Facebook</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <!-- <div class="row mt70 mb10">
+            <div class="col-md-12 text-left">
+              <div style="font-family: 'NexaBold'; font-size: 24px;"></div>
+            </div>
+          </div> -->
+          <div class="group-wrapper">
+            <div class="group-wrapper-sx">
+              <div><strong>Home of Dulce</strong></div>
+              <div class="icons-form">
+                <a class="mt10" href="https://www.facebook.com/homeofdulcesc/">Facebook</a>
+              </div>
+              <div class="link-form">
+                <a class="mt10" href="https://homeofdulce.com/"><strong>Website: </strong> homeofdulce.com/</a>
+              </div>
+              <div class="link-form">
+                <a class="mt10" href="mailto:info@homeofdulce.com"><strong>Email: </strong> info@homeofdulce.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row mt70 mb10">
+        <div class="col-md-12 text-left">
+          <div style="font-family: 'NexaBold'; font-size: 24px;">Quebec</div>
+        </div>
+      </div>
+      <div class="group">
+        <div class="group-wrapper">
+          <div><strong>Centre d’Études Spirites Fraternité</strong></div>
+          <div>5573, Rue de Verdun Montréal – QC – H4H 1L2</div>
+          <div class="link-form">
+            <a href="https://www.cesf.ca/" target="_blank" rel="noreferrer noopener"><strong>Webmail: </strong> cesf.ca</a>
+          </div>
+        </div>
+        <div class="group-wrapper">
+          <div><strong>Centro Espírita Mensageiros Luz e Paz</strong></div>
+          <div>3877 Rue Monselet Montréal-Nord – QC – H1H 2P9</div>
+          <div><strong>Fone:</strong>+1 (514) 328-3901</div>
+          <div class="link-form">
+            <a href="https://centroluzepaz.ca/" target="_blank" rel="noreferrer noopener"><strong>Webmail: </strong> centroluzepaz.ca</a>
+          </div>
+          <div class="link-form">
+            <a href="mailto:centroluzepaz@hotmail.com" target="_blank" rel="noreferrer noopener"><strong>Email: </strong> centroluzepaz@hotmail.com</a></a>
+          </div>
+        </div>
+        <div class="group-wrapper">
+          <div><strong>Centre Spirite Justice, Amour et Charité</strong></div>
+          <div>4701 Boul Robert St-Léonard – QC – H1R 3E6</div>
+          <div class="link-form">
+            <a href="https://www.centrespiritejac.org/" target="_blank" rel="noreferrer noopener">Facebook</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div>
+          <!-- <div class="row mt70 mb10">
+            <div class="col-md-12 text-left">
+              <div style="font-family: 'NexaBold'; font-size: 24px;"></div>
+            </div>
+          </div> -->
+          <div class="row-quebec">
+            <div class="group-wrapper">
+              <div><strong>Centre d´Étude Allan Kardec de Québec</strong></div>
+              <div class="link-form">
+                <a href="http://www.ceakquebec.com"><strong>Webmail: </strong> ceakquebec.com</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="content-world">
+    <div class="container">
+      <div class="row mb30">
+        <div class="col-md-12 text-center">
+          <i class="las la-globe" style="font-size: 36px"></i>
+          <div class="title-world" style="font-size: 26px">Sociedades Espíritas no Mundo          </div>
+        </div>
+      </div>
+      <div class="contact-wrapper">
+        <div class="group-society">
+
+          <div class="group-wrapper">
+            <div><strong>International Spiritist Council</strong> <br><br> SGAN – Q. 603 – Cj. F Brasília – DF – Brasil  <strong>Cep:</strong> 70830-030 <br><br> <strong>Fone:</strong> +55 (61) 322-3024  <br> <strong>Fax:</strong>  +55 (61) 321-8760 <br><br></div>
+            <div>
+              <a class="link" href="https://spiritistinstitute.org/" target="_blank" rel="noreferrer noopener"><strong>Website:</strong> spiritist.org<br><br></a>
+              <a class="link" href="mailto:spiritist@spiritist.org" target="_blank" rel="noreferrer noopener"><strong>E-mail:</strong> spiritist@spiritist.org </a>
+            </div>
+          </div>
+          <div class="group-wrapper">
+            <div><strong>Canadian Spiritist Council</strong><br><br></div>
+            <div class="icons-society">
+              <a class="mt10" href="https://www.facebook.com/canadianspiritistcouncil">Facebook</a>
+            </div>
+            <div>
+              <a class="link" href="https://www.canadianspiritistcouncil.ca/" target="_blank" rel="noreferrer noopener"><strong>Website:</strong> canadianspiritistcouncil.ca</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</section>
+
+<script>
+  function executeCaptcha() {
+    for (const el of document.getElementById('form_recaptcha').querySelectorAll("[required]")) {
+      if (!el.reportValidity()) {
+        return;
+      }
+    }
+    grecaptcha.execute();
+  }
+
+  function submitForm() {
+    document.getElementById("form_recaptcha").submit();
+  }
+</script>
+		<footer>
+            <div class="blue-line"></div>
+			<div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="title-footer">HORÁRIO DE FUNCIONAMENTO</div>
+                            <div class="mt5">Evangelho Segundo o Espiritismo / Caring Family</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Evangelho para crianças e adolescentes</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Reunião Fraterna</div>  
+                            <div>Quarta-feira - 18:00 às 20:00</div>  
+                            <div class="mt20">Hora da meditação</div>  
+                            <div>1o e 3o Sábado do mês - 10:00 às 11:00</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">TELEFONE</div>
+                            <div class="mt5"><a href="tel:14165327896" style="color: #575757;">+1 (416) 532-7896</a></div>
+                            <div class="title-footer mt20">EMAIL</div>
+                            <div class="mt5"><a href="mailto:info@joannadeangelis.ca" style="color: #575757;">info@joannadeangelis.ca</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">REDES SOCIAIS</div>
+                            <div class="social-mideas">
+                                <a href="https://www.facebook.com/jassgtoronto/" target="_blank"><i class="lab la-facebook-square"></i></a>
+                                <a href="https://instagram.com/joannadeangelisca?igshid=YmMyMTA2M2Y=" target="_blank"><i class="lab la-instagram"></i></a>
+                            </div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjassgtoronto&tabs=timeline&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-xs hidden-sm">
+                <div class="container">
+                    <div class="ai_center jc_between">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-md hidden-lg">
+                <div class="container">
+                    <div class="ai_center jc_between fd_column text-center">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+		</footer>
+
+		<!-- JS IMPORTS -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script> <!-- Facebook Iframe -->
+    
+    	<!-- SCRIPTS -->
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                        
+                    } else {
+                        
+                    }
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+        jQuery(function() {
+        jQuery('.links_topo').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+            var target = jQuery(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                jQuery('html,body').animate({
+                scrollTop: target.offset().top -100
+                }, 1000);
+                return false;
+            }
+            }
+        });
+        });
+        </script>
+        
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    
+        <script>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("myModal") || event.target == document.getElementById("close")) {
+                $("#myModal").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal2") || event.target == document.getElementById("close2")) {
+                $("#myModal2").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal3") || event.target == document.getElementById("close3")) {
+                $("#myModal3").css("display","none");
+                }
+            }  
+        </script>
+
+        <script>
+            $('.carousel').carousel({
+                pause: true,
+                interval: false
+            });
+        </script>
+
+        <script>
+            function changeEn() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=en';
+            }
+
+            function changePt() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=pt';
+            }
+        </script>
+
+        <script>$('.phone_us').mask('(00) 00000-0000')</script>	</body>
+
+</html>
