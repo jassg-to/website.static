@@ -2,15 +2,15 @@
 
 @font-face {
   font-family: "NexaBold";
-  src: url("../fonts/Nexa\ Bold.otf");
+  src: url("../fonts/Nexa_Bold.otf");
 }
 @font-face {
   font-family: "NexaLight";
-  src: url("../fonts/Nexa\ Light.otf");
+  src: url("../fonts/Nexa_Light.otf");
 }
 @font-face {
   font-family: "NexaRegular";
-  src: url("../fonts/Nexa\ Regular.otf");
+  src: url("../fonts/Nexa_Regular.otf");
 }
 @font-face {
   font-family: "NexaFreeBold";
@@ -784,7 +784,7 @@ body {
 }
 
 .icons-society a::before {
-  content: url(../images/facebook\ -blue.svg);
+  content: url(../images/facebook-blue.svg);
   position: relative;
 }
 
@@ -826,7 +826,7 @@ body {
 }
 
 .icons-form a::before {
-  content: url(../images/facebook\ -white.svg);
+  content: url(../images/facebook-white.svg);
   position: relative;
 }
 
