@@ -27,7 +27,7 @@ jobs:
           aws-region: ca-central-1
 
       - name: Upload files
-        run: aws s3 sync --exclude ".*" --delete . s3://jassg.ca/
+        run: aws s3 sync --exclude ".*" --delete --only-show-errors . s3://jassg.ca/
 
       - name: Clear cache
         run: aws cloudfront create-invalidation --distribution-id E2Q13YEQKCSRNE --paths "/*"
