@@ -1,0 +1,12 @@
+fonts/glyphicons-halflings-regular.eot
+fonts/glyphicons-halflings-regular.eot?
+fonts/glyphicons-halflings-regular.svg
+fonts/glyphicons-halflings-regular.ttf
+fonts/glyphicons-halflings-regular.woff
+fonts/glyphicons-halflings-regular.woff2
+images/banner_mobile_img.png
+images/branding_mobile_img@2x.jpg
+images/marketing_mobile_img@2x.jpg
+images/plano_de_marketing_mob_img@2x.jpg
+images/posicionamento_mobile_img@2x.jpg
+images/quatro_cs_mobile_img@2x.jpg
