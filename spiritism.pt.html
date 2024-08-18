@@ -1,0 +1,262 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Joanna de Ângelis</title>
+        <link rel="shortcut icon" href="images/favicon_img.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/template.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!-- Open Sans -->
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> <!-- Line Awesome -->
+    
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar st-navbar navbar-fixed-top">
+                <div class="second-top">
+                    <div class="container">
+                        <div class="ai_center jc_between">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="openNav()">
+                                    <i class="las la-bars" id="barra_menu"></i>
+                                </button>
+                                <a href="index.php">
+                                    <img class="logo" src="images/logotipo_joanna_img.png">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="st-navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right itens-menu" style="display: flex; align-items: center;">
+                                    <li><a href="about.php" class="links_topo">SOBRE NÓS</a></li>
+                                    <li class="dropdown">
+                                        <a href="spiritism.php" class=" links_topo dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ESPIRITISMO</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="spiritism.php" class="item-dropdown">A Filosofia Espírita ou Espiritismo</a></li>
+                                            <li><a href="movement.php" class="item-dropdown">Movimento Espírita</a></li>
+                                            <li><a href="groups.php" class="item-dropdown">Grupos, centros ou sociedades espíritas</a></li>								
+                                            <li><a href="federations.php" class="item-dropdown">Federações e Movimento</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="activities.php" class=" links_topo">ATIVIDADES</a></li>
+                                    <!-- <li><a href="bookstore.php" class="links_topo">LIVRARIA</a></li> -->
+                                    <!-- <li><a href="library.php" class="links_topo">BIBLIOTECA</a></li> -->
+                                    <!-- <li><a href="blog.php" class="links_topo">NOTÍCIAS</a></li> -->
+                                    <li><a href="contact.php" class="links_topo">CONTATO</a></li>
+                                    <li id="" class="hidden-xs hidden-sm">
+                                        <div class="bandeiraativa">
+                                            <img class="currently_idiom" src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                            <div class="bandeiradois" style="z-index: 999;">
+                                                <a onclick="changeEn()">
+                                                    <img class="option_idiom" src="images/bandeira_usa.png" style="width: 30px; height: 30px; margin-left: 9px; margin-top: 0px;"> 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="las la-times"></i></a>
+                    <div class="overlay-content">
+                        <ul class="list_overlay">
+                            <li><a href="about.php" class="links_topo topic-mob" onclick="closeNav()">SOBRE NÓS</a></li>
+                            <li>
+                                <div><a href="spiritism.php" class=" links_topo topic-mob" onclick="closeNav()" style="padding: 25px 0;">ESPIRITISMO</a></div>
+                                <div><a href="spiritism.php" class="item-dropdown-mob">A Filosofia Espírita ou Espiritismo</a></div>
+                                <div><a href="movement.php" class="item-dropdown-mob">Movimento Espírita</a></div>
+                                <div><a href="groups.php" class="item-dropdown-mob">Grupos, centros ou sociedades espíritas</a></div>
+                                <div><a href="federations.php" class="item-dropdown-mob">Federações e Movimento</a></div>
+                            </li>
+                            <li><a href="activities.php" class=" links_topo topic-mob" onclick="closeNav()">ATIVIDADES</a></li>
+                            <!-- <li><a href="bookstore.php" class="links_topo topic-mob" onclick="closeNav()">LIVRARIA</a></li> -->
+                            <!-- <li><a href="library.php" class="links_topo topic-mob" onclick="closeNav()">BIBLIOTECA</a></li> -->
+                            <!-- <li><a href="blog.php" class="links_topo topic-mob" onclick="closeNav()">NOTÍCIAS</a></li> -->
+                            <li><a href="contact.php" class="links_topo topic-mob" onclick="closeNav()">CONTATO</a></li>
+                            <li>
+                                <div style="display:flex;align-items:center;justify-content:center;gap:20px;padding:15px;">
+                                    <a onclick="changeEn()">
+                                        <img src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                    </a>
+                                    <a onclick="changePt()">
+                                        <img src="images/bandeira_usa.png" style="margin-left: 10px; width: 30px; height: 30px;"> 
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>						
+                </div>
+                
+            </nav>
+        </header>
+	<section id="banner-spiritism">
+		<div class="background-banner-spiritism">
+			<div class="text-banner-telas">
+                A Filosofia Espírita ou Espiritismo			</div>
+		</div>
+	</section>
+
+    <section>
+        <div class="mt100 mb100">
+            <div class="container">
+                <div class="subtitle-main-site">O que é</div>
+                <div class="mt10">É o conjunto de leis e princípios, como revelados pelos Espíritos Superiores, contidos no trabalho de Allan Kardec, que constituem a Codificação Espírita: O Livro dos Espíritos, O Livro dos Médiums, O Evangelho Segundo o Espiritismo, Céu e Inferno e A Gênese. <br> <br> “O Espiritismo é uma ciência que trata da natureza, da origem e da destinação dos Espíritos, e das suas relações com o mundo corporal.”(1) <br> “O Espiritismo, assim, realiza o que Jesus disse do Consolador prometido: o conhecimento das coisas, fazendo com que o homem saiba de onde vem, para onde vai e por que está sobre a Terra. Recorda o homem dos verdadeiros princípios da Lei de Deus, da consolação pela fé e pela esperança.”(2) </div>
+                <div class="subtitle-main-site mt40">O que revela</div>
+                <div class="mt10">Ele revela novos e mais profundos conceitos relativos a Deus, o Universo, o Ser Humano, os Espíritos e as Leis que governam a vida. <br> <br> Além disso, ele revela quem somos, de onde viemos, para onde estamos indo, qual é o objetivo de nossa existência e a razão da dor e do sofrimento.</div>
+                <div class="subtitle-main-site mt40">O que contém</div>
+                <div class="mt10">A partir de novos conceitos sobre o Ser Humano e tudo o que o cerca, o Espiritismo aborda todas as áreas do conhecimento, atividades e comportamentos humanos, abrindo uma nova era para a regeneração da Humanidade. <br> <br> <strong>O Espiritismo pode e deve ser estudado, analisado e praticado em todos os aspectos fundamentais da vida: científico, filosófico, religioso, ético, moral, educacional e social.</strong></div>
+                <div class="subtitle-main-site mt40">O que ensina</div>
+                <div class="mt10">Deus é a Suprema Inteligência, causa primeira de todas as coisas. Deus é eterno, imutável, imaterial, único, onipotente, supremamente justo e bom. <br> <br> O Universo é criação de Deus. Inclui todos os seres racionais e irracionais, animados e inanimados, materiais e imateriais. <br> <br> Em adição ao mundo corporal habitado pelos Espíritos encarnados, que são os seres humanos, existe o mundo espiritual, habitado pelos Espíritos desencarnados. <br> <br> Dentro do Universo existem outros mundos habitados, com seres em diferentes graus de evolução: alguns iguais, outros mais ou menos evoluídos que o Homem da terra. <br> <br> Todas as Leis da Natureza são Leis Divinas porque Deus é o seu Criador. Elas englobam tanto as leis físicas quanto as leis morais. <br> <br> Um Ser Humano é um Espírito encarnado num corpo físico. O perispírito é um corpo semi-material que une o Espírito ao corpo físico. <br> <br> Os Espíritos são os seres inteligentes da criação. Eles constituem o mundo dos Espíritos que pré-existem e sobrevivem a tudo. <br> <br> Os Espíritos são criados simples e ignorantes. Eles evoluem intelectualmente e moralmente, passando de uma ordem inferior a uma superior, até que atinjam a perfeição, onde eles gozarão de uma inalterável felicidade. <br> <br> Os Espíritos preservam suas individualidades antes, durante e depois de cada encarnação. Os Espíritos reencarnam quantas vezes forem necessárias para o seu adiantamento espiritual. Os Espíritos sempre estão progredindo. Em suas múltiplas existências físicas, eles podem algumas vezes estacionar em seu processo evolutivo, mas nunca regridem. A velocidade de seu progresso intelectual e moral depende dos esforços que eles mantém para atingir a perfeição. <br> <br> Os Espíritos pertencem a diferentes ordens consoante o grau de perfeição que tiverem atingido. Espíritos Puros, que atingiram a perfeição máxima; Espíritos Bons, aqueles em que o desejo de fazer o bem predominam; e os Espíritos Imperfeitos, caracterizados pela sua ignorância, sua tendência em praticar o mal e por suas paixões inferiores. <br> <br> As relações dos Espíritos com os Seres Humanos são constantes e sempre existiram. Os Bons Espíritos nos atraem para o bem, nos apóiam durante as dificuldades da vida e nos ajudam a superá-las com coragem e resignação. Os Espíritos Imperfeitos nos induzem ao erro <br> <br> Jesus é o Guia e Modelo para toda a Humanidade. Seus ensinamentos e exemplos é a pura expressão da Lei de Deus. <br> <br> A moralidade do Cristo, como está descrita nos Evangelhos, é o guia seguro para o progresso de todos os Seres Humanos. Sua prática é a solução para todos os problemas humanos e seu objetivo seja atingido por toda a Humanidade. Aos Seres Humanos é dado o livre-arbítrio para agir, mas estes devem responder por suas ações. <br> <br> A vida futura reserva aos Seres Humanos penas e prazeres de acordo com o respeito que eles têm ou não às Leis de Deus. <br> <br> A prece é um ato de adoração a Deus. Faz parte da lei natural e é o resultado de um sentimento inato que existe em todos os Seres Humanos, assim como a ideia de um Criador também é inata. <br> <br> A prece faz o Ser Humano ser melhor. Qualquer um que ora com fervor e confiança, torna-se mais forte contra as tentações do mal e Deus envia os Espíritos Bons para os assistir. Essa assistência nunca é negada quando solicitada com sinceridade.</div>
+                <div class="subtitle-main-site mt40">Prática Espírita</div>
+                <div class="mt10">Toda a prática Espírita é gratuíta, seguindo a orientação do princípio moral encontrado no Evangelho: “Daí de graça o que de graça recebeis”. <br> <br> O Espiritismo é praticado com simplicidade, sem rituais, dentro do princípio Cristão de que Deus deve ser adorado em espírito e verdade. <br> <br> O Espiritismo não tem clero e tampouco adota ou usa durante suas reuniões ou práticas o seguinte: altares, imagens, velas, procissões, sacramentos, concessão de indulgências, vestes religiosas, álcool ou bebidas alucinógenas, incensos, tabaco, talismãs, amuletos, horóscopos, cartomancia, pirâmides, cristais, ou quaisquer outros objetos, rituais ou formas externas de adoração. <br> <br> O Espiritismo não impõe seus princípios. Ele covida os interessados a conhecê-lo e submeter seus ensinamentos à razão antes de aceitá-los. <br> <br> A mediunidade, que permite a comunicação dos Espíritos com os Seres Humanos, é a faculdade que muitos indivíduos trazem desde o seu nascimento, independente de religião ou crenças que eles venham a adotar. <br> <br>   Kardec nos ensina que TODOS os seres humanos são médiuns. Há aqueles outros que tem uma mediunidade mais ostensiva pelo seu plano reincarnatório. <br> <br>  A prática mediúnica Espírita é somente aquela que é exercida baseada nos princípios do Espiritismo e dentro dos conceitos morais Cristãos. <br> <br> O Espiritismo respeita todas as religiões e doutrinas, validando todos os esforços realizados para a prática do bem; trabalha pela paz e confraternização de todas as nações e pessoas, sem distinção de etnia, cor, nacionalidade, credo, cultura ou posição social. Ele também reconhece que “o verdadeiro homem de bem é aquele que pratica a lei de justiça, de amor e caridade na sua maior pureza”. <br> <br></div>
+                <div class='mt40 mb40 text-blue-bold'>(1) Allan Kardec (O que é o Espiritismo? – Preâmbulo, traduzido do original em Francês). <br> (2) Allan Kardec (O Evangelho Segundo o Espiritismo – Cap. 6 – Item 4), traduzido do original em Francês. <br></div>            </div>
+        </div>
+    </section>
+
+		<footer>
+            <div class="blue-line"></div>
+			<div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="title-footer">HORÁRIO DE FUNCIONAMENTO</div>
+                            <div class="mt5">Evangelho Segundo o Espiritismo / Caring Family</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Evangelho para crianças e adolescentes</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Reunião Fraterna</div>  
+                            <div>Quarta-feira - 18:00 às 20:00</div>  
+                            <div class="mt20">Hora da meditação</div>  
+                            <div>1o e 3o Sábado do mês - 10:00 às 11:00</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">TELEFONE</div>
+                            <div class="mt5"><a href="tel:14165327896" style="color: #575757;">+1 (416) 532-7896</a></div>
+                            <div class="title-footer mt20">EMAIL</div>
+                            <div class="mt5"><a href="mailto:info@joannadeangelis.ca" style="color: #575757;">info@joannadeangelis.ca</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">REDES SOCIAIS</div>
+                            <div class="social-mideas">
+                                <a href="https://www.facebook.com/jassgtoronto/" target="_blank"><i class="lab la-facebook-square"></i></a>
+                                <a href="https://instagram.com/joannadeangelisca?igshid=YmMyMTA2M2Y=" target="_blank"><i class="lab la-instagram"></i></a>
+                            </div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjassgtoronto&tabs=timeline&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-xs hidden-sm">
+                <div class="container">
+                    <div class="ai_center jc_between">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-md hidden-lg">
+                <div class="container">
+                    <div class="ai_center jc_between fd_column text-center">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+		</footer>
+
+		<!-- JS IMPORTS -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script> <!-- Facebook Iframe -->
+    
+    	<!-- SCRIPTS -->
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                        
+                    } else {
+                        
+                    }
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+        jQuery(function() {
+        jQuery('.links_topo').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+            var target = jQuery(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                jQuery('html,body').animate({
+                scrollTop: target.offset().top -100
+                }, 1000);
+                return false;
+            }
+            }
+        });
+        });
+        </script>
+        
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    
+        <script>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("myModal") || event.target == document.getElementById("close")) {
+                $("#myModal").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal2") || event.target == document.getElementById("close2")) {
+                $("#myModal2").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal3") || event.target == document.getElementById("close3")) {
+                $("#myModal3").css("display","none");
+                }
+            }  
+        </script>
+
+        <script>
+            $('.carousel').carousel({
+                pause: true,
+                interval: false
+            });
+        </script>
+
+        <script>
+            function changeEn() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=en';
+            }
+
+            function changePt() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=pt';
+            }
+        </script>
+
+        <script>$('.phone_us').mask('(00) 00000-0000')</script>	</body>
+
+</html>

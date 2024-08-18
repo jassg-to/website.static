@@ -1,0 +1,265 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+        <title>Joanna de Ângelis</title>
+        <link rel="shortcut icon" href="images/favicon_img.png">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="css/template.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/responsive.css"/>
+
+        <link rel="preconnect" href="https://fonts.gstatic.com"> <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"> <!-- Open Sans -->
+        <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css"> <!-- Line Awesome -->
+    
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    </head>
+
+    <body>
+        <header>
+            <nav class="navbar st-navbar navbar-fixed-top">
+                <div class="second-top">
+                    <div class="container">
+                        <div class="ai_center jc_between">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" onclick="openNav()">
+                                    <i class="las la-bars" id="barra_menu"></i>
+                                </button>
+                                <a href="index.php">
+                                    <img class="logo" src="images/logotipo_joanna_img.png">
+                                </a>
+                            </div>
+                            <div class="collapse navbar-collapse" id="st-navbar-collapse">
+                                <ul class="nav navbar-nav navbar-right itens-menu" style="display: flex; align-items: center;">
+                                    <li><a href="about.php" class="links_topo">SOBRE NÓS</a></li>
+                                    <li class="dropdown">
+                                        <a href="spiritism.php" class=" links_topo dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ESPIRITISMO</a>
+                                        <ul class="dropdown-menu">
+                                            <li><a href="spiritism.php" class="item-dropdown">A Filosofia Espírita ou Espiritismo</a></li>
+                                            <li><a href="movement.php" class="item-dropdown">Movimento Espírita</a></li>
+                                            <li><a href="groups.php" class="item-dropdown">Grupos, centros ou sociedades espíritas</a></li>								
+                                            <li><a href="federations.php" class="item-dropdown">Federações e Movimento</a></li>
+                                        </ul>
+                                    </li>
+                                    <li><a href="activities.php" class=" links_topo">ATIVIDADES</a></li>
+                                    <!-- <li><a href="bookstore.php" class="links_topo">LIVRARIA</a></li> -->
+                                    <!-- <li><a href="library.php" class="links_topo">BIBLIOTECA</a></li> -->
+                                    <!-- <li><a href="blog.php" class="links_topo">NOTÍCIAS</a></li> -->
+                                    <li><a href="contact.php" class="links_topo">CONTATO</a></li>
+                                    <li id="" class="hidden-xs hidden-sm">
+                                        <div class="bandeiraativa">
+                                            <img class="currently_idiom" src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                            <div class="bandeiradois" style="z-index: 999;">
+                                                <a onclick="changeEn()">
+                                                    <img class="option_idiom" src="images/bandeira_usa.png" style="width: 30px; height: 30px; margin-left: 9px; margin-top: 0px;"> 
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="las la-times"></i></a>
+                    <div class="overlay-content">
+                        <ul class="list_overlay">
+                            <li><a href="about.php" class="links_topo topic-mob" onclick="closeNav()">SOBRE NÓS</a></li>
+                            <li>
+                                <div><a href="spiritism.php" class=" links_topo topic-mob" onclick="closeNav()" style="padding: 25px 0;">ESPIRITISMO</a></div>
+                                <div><a href="spiritism.php" class="item-dropdown-mob">A Filosofia Espírita ou Espiritismo</a></div>
+                                <div><a href="movement.php" class="item-dropdown-mob">Movimento Espírita</a></div>
+                                <div><a href="groups.php" class="item-dropdown-mob">Grupos, centros ou sociedades espíritas</a></div>
+                                <div><a href="federations.php" class="item-dropdown-mob">Federações e Movimento</a></div>
+                            </li>
+                            <li><a href="activities.php" class=" links_topo topic-mob" onclick="closeNav()">ATIVIDADES</a></li>
+                            <!-- <li><a href="bookstore.php" class="links_topo topic-mob" onclick="closeNav()">LIVRARIA</a></li> -->
+                            <!-- <li><a href="library.php" class="links_topo topic-mob" onclick="closeNav()">BIBLIOTECA</a></li> -->
+                            <!-- <li><a href="blog.php" class="links_topo topic-mob" onclick="closeNav()">NOTÍCIAS</a></li> -->
+                            <li><a href="contact.php" class="links_topo topic-mob" onclick="closeNav()">CONTATO</a></li>
+                            <li>
+                                <div style="display:flex;align-items:center;justify-content:center;gap:20px;padding:15px;">
+                                    <a onclick="changeEn()">
+                                        <img src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
+                                    </a>
+                                    <a onclick="changePt()">
+                                        <img src="images/bandeira_usa.png" style="margin-left: 10px; width: 30px; height: 30px;"> 
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>						
+                </div>
+                
+            </nav>
+        </header>
+	<section id="banner-spiritism">
+		<div class="background-banner-federations">
+			<div class="text-banner-telas">
+                Federações e Movimento de Unificação Espírita			</div>
+		</div>
+	</section>
+
+    <section>
+        <div class="mt50 mb50">
+            <div class="container">
+                <div>“O Espiritismo é uma questão de profundidade; ser limitado pela forma seria uma loucura indigna da magnitude do assunto. Portanto, os Centros que acreditam compreender o verdadeiro Espiritismo devem estender a mão para os outros, em fraternidade, e assim se unir para combater os inimigos comuns: a incredulidade e o fanatismo.”<br> <span style="color: #456095; font-style: italic;"> Allan Kardec (Obras Póstumas - A Constituição do Espiritismo - Item VI)</span></div>
+                <div class="subtitle-main-site mt40">O que é</div>
+                <div class="mt10">O trabalho das Federações e de unificação do Movimento Espírita serve para fortalecer, viabilizar, ampliar e aprimorar a atuação do Movimento Espírita em seu objetivo final de promover o estudo, a divulgação e a prática do Espiritismo. <br> <br > Resulta da união fraterna, voluntária, conscienciosa e operacional de Espíritas e Instituições Espíritas por meio da troca de informações e experiências, ajuda mútua e atuação conjunta. <br> <br> É fundamental para o fortalecimento, aprimoramento e crescimento das Instituições Espíritas, e para a correção de eventuais desvios dos próprios ensinamentos e práticas administrativas.</div>
+                <div class="subtitle-main-site mt40">O que faz</div>
+                <div class="mt10">Promove o contato contínuo com os Grupos, Centros ou Sociedades Espíritas, estimulando sua união e integração, disponibilizando-lhes sugestões, conhecimentos e apoiando programas e materiais necessários à sua atuação. <br> <br> Realiza encontros, cursos, confraternizações e outros eventos dirigidos a administradores e trabalhadores de organizações espíritas, com o objetivo de atualizar e atualizar os conhecimentos pedagógicos e procedimentos administrativos voltados para o aprimoramento e ampliação das atividades das Instituições Espíritas e para a abertura de novas áreas de atuação e atuação. <br > <br> Organiza eventos dirigidos ao público em geral para a divulgação dos ensinamentos do Espiritismo, permitindo assim que o Espiritismo seja mais conhecido e melhor praticado.</div>
+                <div class="subtitle-main-site mt40">Como está estruturado</div>
+                <div class="mt10">É estruturado por meio da união de Grupos, Centros ou Sociedades Espíritas que, preservando sua autonomia e liberdade de ação, agregam forças e somam experiências que visam o aprimoramento contínuo e o fortalecimento de suas atividades e do Movimento Espírita em geral. <br> <br> Reunidos, os Grupos, Centros ou Sociedades Espíritas constituem as Federações e Entidades de Unificação do Movimento Espírita em nível local, regional, estadual ou nacional. <br> <br> As Federações e Entidades de A Unificação do Movimento Espírita em nível nacional constitui por sua vez a Entidade de Unificação do Movimento Espírita em nível internacional: o Conselho Espírita Internacional. <br> <br> Diretrizes para o Trabalho das Federações e de Unificação do Movimento Espírita : <br> <br> O trabalho das Federações e de unificação do Movimento Espírita, bem como o de união das Instituições Espíritas e Espíritas, está baseado no os princípios de fraternidade, solidariedade, liberdade e responsabilidade prescritos pela Doutrina Espírita. <br> Caracteriza-se por oferecer assistência sem exigir indenização; ajudando sem criar condições; instruindo sem impor resultados; e unindo sem inibir as iniciativas, preservando assim os valores e as características distintivas das pessoas e das instituições. <br> A integração e participação das Instituições Espíritas neste trabalho, sempre voluntário e consciencioso, são realizadas com base na igualdade. sem subordinação, respeitando e preservando a independência, autonomia e liberdade de ação das instituições. <br> Os programas e materiais de apoio colocados à disposição das Instituições Espíritas não são obrigatórios. Fica a seu critério adotá-los ou não, total ou parcialmente, ou adaptá-los às suas necessidades e conveniências. <br> Em todas as atividades o estudo metódico, profundo e constante das obras de Allan Kardec , que constituem a Codificação Espírita, devem ser sempre incentivados, ressaltando-se os fundamentos sobre os quais se assentam as Ensinanças. <br> Todos os trabalhos e atividades têm como objetivo maior colocar com simplicidade e clareza a mensagem consoladora e norteadora das Ensinanças Espiritistas em ao alcance e ao serviço de todos por meio do estudo, da oração e de outras atividades conjuntas. <br> O trabalho das Federações, assim como as atividades de unificação do Movimento Espírita, devem sempre preservar o direito inerente dos participantes de pensar, criar e agir, como professados ​​e elogiados pelas Ensinanças Espiritistas, entendendo-se, porém, que toda e qualquer atividade deve estar de acordo com as obras da Codificação de Allan Kardec..</div>
+                <div class="subtitle-main-site mt40">A tarefa dos espíritas</div>
+                <div class="mt10">“Saia então e leve a Palavra Divina: para os grandes que estarão desprezando; aos eruditos que exigirão provas; aos humildes e simples que aceitarão; porque é principalmente entre os mártires para trabalhar, esta provação terrestre, que encontrarás o fervor e a fé. <br> <br> Fortifica a tua falange com decisão e coragem! Mãos à obra! O arado está pronto! A terra espera; arado! <br> <br> Vá em frente e agradeça a Deus pela gloriosa tarefa que Ele lhe confiou; mas preste atenção! Entre os chamados ao Espiritismo, muitos se perderão; então, marque bem o seu caminho e siga a verdade.”<br> <span style="color: #456095; font-style: italic;"> Erasto O Evangelho Segundo o Espiritismo - Cap. XX - Item 4</span></div>
+                <div class="subtitle-main-site mt40">Observações - Conselho Espírita Internacional</div>
+                <div class="mt10">O Regulamento do Conselho Espírita Internacional estabelece que: <br> <br> O Conselho Espírita Internacional (CEI) é uma organização resultante da união, em nível mundial, das organizações representativas dos Movimentos Espíritas nacionais. <br> <br> As principais finalidades e objetivos do CEI são: <br> <br> Promover a união fraterna das Instituições Espíritas de todos os países e a Unificação do Movimento Espírita Internacional.<br> Promover o estudo e divulgação do Movimento Espírita Internacional. O Espiritismo em seus três aspectos básicos: científico, filosófico e religioso. <br> Promover a prática da caridade espiritual, moral e material segundo a Doutrina Espírita. <br> Os propósitos e objetivos do CEI fundamentam-se no Espiritismo codificados por Allan Kardec, e sobre as obras que, seguindo suas diretrizes, se tornem complementares e subsidiárias da Codificação.<br><br> Os programas e materiais de apoio oferecidos pelo CEI não são obrigatórios. Fica a critério dos organismos espíritas de cada país a decisão de adotá-los ou não, parcial ou totalmente, ou de adaptá-los às suas necessidades ou conveniências.<br><br> Os organismos filiados ao O CEI deve manter sua autonomia, independência e liberdade de ação. A sua afiliação ao CEI deverá basear-se e ter como objetivo a solidariedade e a união fraterna.<br><br> As atividades relacionadas neste documento são propostas como sugestões. As Instituições Espíritas, a seu critério, poderão adotá-los na medida em que seu crescimento e desenvolvimento criem as condições adequadas, e nos momentos que seus administradores considerem convenientes. <br> <br> A atividade espírita será sempre desenvolvida de forma compatível com as características do meio social e em total conformidade com a legislação local.</div>
+                <div class="subtitle-main-site mt40">No Trabalho de Unificação</div>
+                <div class="mt10">“O trabalho de unificação em nossas fileiras é urgente, mas não apressado. Uma afirmação parece contradizer a outra. Mas não é assim. É urgente porque define o objetivo que devemos almejar; mas não apressado porque não nos é permitido violar a consciência de ninguém. <br> <br> Vamos preservar o propósito de nos unir, nos aproximar e nos compreender; e, se possível, estabeleçamos em cada lugar onde o nome do Espiritismo foi trazido à luz, um grupo de estudo, por menor que seja, das obras de Kardec, à luz do Cristo de Deus.<br><br> A Doutrina Espírita mantém seus aspectos essenciais em tripla configuração. Assim, ninguém deve ser restringido em seu desejo de trabalhar e produzir. Que aqueles inclinados para as ciências os cultivem em sua dignidade; aqueles que se dedicam à filosofia para enobrecer seus postulados; e aqueles que se consagram à religião para tornar divinas suas aspirações. Mas, antes de tudo, é preciso que a base da Doutrina Espírita permaneça em todos e em tudo para que não percamos o equilíbrio na base sobre a qual se alça a organização. <br> <br> Ensinar, mas também colocar em prática; acreditar, mas também estudar; para aconselhar, mas também para exemplificar; unir, mas também alimentar.<br><br> É imprescindível que o Espiritismo seja mantido exatamente como foi veiculado a Allan Kardec pelos Divinos Mensageiros, ou seja, sem compromissos políticos, sem profissionalismo religioso, sem degradantes personalismos, e sem ardentes desejos de conquista de poderes terrestres fugazes.<br><br> Vamos seguir Allan Kardec em nossos estudos, aspirações, atividades e ações para que nossa fé não se transforme em hipnose, por meio da qual o poder das trevas exerce sua influência sobre as mentes mais fracas, acorrentando-as a séculos de ilusão e sofrimento.<br><br> Que a obra de Allan Kardec não só seja acreditada ou sentida, proclamada ou manifestada em nossas convicções, mas também suficientemente vivida, sofrida, chorada e colocada em prática em nossas próprias vidas. Sem este fundamento, é difícil forjar o caráter espírita-cristão que o mundo conturbado espera de nós por meio da unificação.<br><br> Que o amor de Jesus esteja sobre todos e a verdade de Kardec seja para todos.”<br><br> <span style="color: #456095; font-style: italic;">Bezerra de Menezes (Trechos da mensagem “Unificação”, canalizada por Francisco Candido Xavier, Reformador, dez / 1975</span></div>
+            </div>
+        </div>
+    </section>
+
+		<footer>
+            <div class="blue-line"></div>
+			<div class="main-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-5">
+                            <div class="title-footer">HORÁRIO DE FUNCIONAMENTO</div>
+                            <div class="mt5">Evangelho Segundo o Espiritismo / Caring Family</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Evangelho para crianças e adolescentes</div> 
+                            <div>Domingo - 11:00 às 12:30</div>  
+                            <div class="mt20">Reunião Fraterna</div>  
+                            <div>Quarta-feira - 18:00 às 20:00</div>  
+                            <div class="mt20">Hora da meditação</div>  
+                            <div>1o e 3o Sábado do mês - 10:00 às 11:00</div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">TELEFONE</div>
+                            <div class="mt5"><a href="tel:14165327896" style="color: #575757;">+1 (416) 532-7896</a></div>
+                            <div class="title-footer mt20">EMAIL</div>
+                            <div class="mt5"><a href="mailto:info@joannadeangelis.ca" style="color: #575757;">info@joannadeangelis.ca</a></div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="hidden-md hidden-lg mt20"></div>
+                            <div class="title-footer">REDES SOCIAIS</div>
+                            <div class="social-mideas">
+                                <a href="https://www.facebook.com/jassgtoronto/" target="_blank"><i class="lab la-facebook-square"></i></a>
+                                <a href="https://instagram.com/joannadeangelisca?igshid=YmMyMTA2M2Y=" target="_blank"><i class="lab la-instagram"></i></a>
+                            </div>
+                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjassgtoronto&tabs=timeline&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-xs hidden-sm">
+                <div class="container">
+                    <div class="ai_center jc_between">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer hidden-md hidden-lg">
+                <div class="container">
+                    <div class="ai_center jc_between fd_column text-center">
+                        <div>© Copyright 2021 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
+                    </div>
+                </div>
+            </div>
+		</footer>
+
+		<!-- JS IMPORTS -->
+        <script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/jquery.mask.min.js"></script> <!-- jQuery -->
+        <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script> <!-- Facebook Iframe -->
+    
+    	<!-- SCRIPTS -->
+        <script>
+            $(document).ready(function(){
+                $(window).scroll(function() { // check if scroll event happened
+                    if ($(document).scrollTop() > 50) { // check if user scrolled more than 50 from top of the browser window
+                        
+                    } else {
+                        
+                    }
+                });
+            });
+        </script>
+        
+        <script type="text/javascript">
+        jQuery(function() {
+        jQuery('.links_topo').click(function() {
+            if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+
+            var target = jQuery(this.hash);
+            target = target.length ? target : jQuery('[name=' + this.hash.slice(1) +']');
+            if (target.length) {
+                jQuery('html,body').animate({
+                scrollTop: target.offset().top -100
+                }, 1000);
+                return false;
+            }
+            }
+        });
+        });
+        </script>
+        
+        <script>
+            function openNav() {
+                document.getElementById("myNav").style.width = "100%";
+            }
+
+            function closeNav() {
+                document.getElementById("myNav").style.width = "0%";
+            }
+        </script>
+    
+        <script>
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == document.getElementById("myModal") || event.target == document.getElementById("close")) {
+                $("#myModal").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal2") || event.target == document.getElementById("close2")) {
+                $("#myModal2").css("display","none");
+                }
+                if (event.target == document.getElementById("myModal3") || event.target == document.getElementById("close3")) {
+                $("#myModal3").css("display","none");
+                }
+            }  
+        </script>
+
+        <script>
+            $('.carousel').carousel({
+                pause: true,
+                interval: false
+            });
+        </script>
+
+        <script>
+            function changeEn() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=en';
+            }
+
+            function changePt() {
+                window.location.href = window.location.href.split(/[?#]/)[0] + '?idioma=pt';
+            }
+        </script>
+
+        <script>$('.phone_us').mask('(00) 00000-0000')</script>	</body>
+
+</html>
