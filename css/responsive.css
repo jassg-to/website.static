@@ -55,7 +55,7 @@
   height: calc(100vh - 42px);
 }
 .background-banner-mob {
-  background-image: url("../images/banner_mobile_img.png");
+  background-image: url(../images/banner_mobile_img.png);
   background-size: cover;
   width: 100%;
   height: 45vh;
@@ -81,7 +81,7 @@
   width: 100%;
 }
 .background-metodo-mob {
-  background-image: url("../images/quatro_cs_mobile_img@2x.jpg");
+  background-image: url(../images/quatro_cs_mobile_img@2x.jpg);
   background-size: cover;
   width: 100%;
   padding: 50px 0px;
