@@ -1,0 +1,33 @@
+name: Upload files to update Website
+
+on:
+  push:
+    branches: [ main ]
+
+env:
+  AWS_REGION : ca-central-1
+
+permissions:
+  id-token: write   # This is required for requesting the JWT
+  contents: read    # This is required for actions/checkout
+
+jobs:
+  upload:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Git clone the repository
+        uses: actions/checkout@v4
+
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v4
+        with:
+          role-to-assume: arn:aws:iam::505559659010:role/Github-JassgTo
+          role-session-name: GitHub_to_AWS_via_FederatedOIDC
+          aws-region: ca-central-1
+
+      - name: Upload files
+        run: aws s3 sync --exclude ".*" --delete . s3://jassg.ca/
+
+      - name: Clear cache
+        run: aws cloudfront create-invalidation --distribution-id E2Q13YEQKCSRNE --paths "/*"
