@@ -59,7 +59,7 @@
                                     <a href="{{slug}}.pt.html" hreflang="pt">
                                         <img src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
                                     </a>
-                                    <a href="{{slug}}.en.html" hreflang="en">
+                                    <a href="{{slug}}{% if slug != 'index' %}.en{% endif %}.html" hreflang="en">
                                         <img src="images/bandeira_usa.png" style="margin-left: 10px; width: 30px; height: 30px;">
                                     </a>
                                 </div>

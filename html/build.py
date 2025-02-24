@@ -1,28 +1,38 @@
-#!/usr/bin/env -S uv run
+#!/usr/bin/env -S uv run -q
 # /// script
 # requires-python = ">=3.10"
 # dependencies = [
 #     "jinja2",
 # ]
 # ///
-from pathlib import Path
+import datetime
+import pathlib
 
-from jinja2 import Environment, FileSystemLoader
+import jinja2
 
-HERE = Path(__file__).resolve().parent
-TARGET = HERE.parent
+HERE = pathlib.Path(__file__).resolve().parent
 
 
 def main():
-    env = Environment(loader=FileSystemLoader(HERE))
+    environment = jinja2.Environment(loader=jinja2.FileSystemLoader(HERE))
+    environment.globals["year"] = datetime.date.today().year
+    destination_folder = HERE.parent
     for file in HERE.glob("*.html"):
-        # skip partials
+        # skip helper files
         if file.name.startswith("_"):
             continue
 
-        template = env.get_template(file.name)
-        output = template.render()
-        with open(TARGET / file.name, "w") as f:
+        # infer values for {{slug}} and {{lang}} from filename if possible
+        parts = file.name.split(".")
+        if len(parts) == 3 and len(parts[1]) == 2:
+            slug, lang, _ = parts
+        else:
+            slug, lang = "index", "en"
+
+        # run template and save results
+        template = environment.get_template(file.name)
+        output = template.render(slug=slug, lang=lang)
+        with open(destination_folder / file.name, "w") as f:
             f.write(output)
 
 
