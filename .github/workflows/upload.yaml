@@ -5,10 +5,10 @@ on:
     branches: [ main ]
 
 env:
-  AWS_REGION : ca-central-1
+  AWS_REGION: ca-central-1
 
 permissions:
-  id-token: write   # This is required for requesting the JWT
+  id-token: write   # This is required for assuming the AWS role
   contents: read    # This is required for actions/checkout
 
 jobs:
@@ -25,6 +25,15 @@ jobs:
           role-to-assume: arn:aws:iam::505559659010:role/Github-JassgTo
           role-session-name: GitHub_to_AWS_via_FederatedOIDC
           aws-region: ca-central-1
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run the HTML templates
+        run: uv run html/build.py
+
+      - name: Clean up nonpublic files
+        run: rm -rf html
 
       - name: Upload files
         run: aws s3 sync --exclude ".*" --delete --only-show-errors . s3://jassg.ca/
