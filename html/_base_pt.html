@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt">
 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-        <title>Joanna de Ângelis</title>
+        <title>Joanna de Ângelis Spiritist Study Group</title>
         <link rel="shortcut icon" href="images/favicon_img.png">
 
         <link rel="stylesheet" href="css/bootstrap.min.css"/>
@@ -45,15 +45,12 @@
                                         </ul>
                                     </li>
                                     <li><a href="activities.pt.html" class=" links_topo">ATIVIDADES</a></li>
-                                    <!-- <li><a href="bookstore.pt.html" class="links_topo">LIVRARIA</a></li> -->
-                                    <!-- <li><a href="library.pt.html" class="links_topo">BIBLIOTECA</a></li> -->
-                                    <!-- <li><a href="blog.pt.html" class="links_topo">NOTÍCIAS</a></li> -->
                                     <li><a href="contact.pt.html" class="links_topo">CONTATO</a></li>
                                     <li id="" class="hidden-xs hidden-sm">
                                         <div class="bandeiraativa">
                                             <img class="currently_idiom" src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
                                             <div class="bandeiradois" style="z-index: 999;">
-                                                <a href="groups.en.html" hreflang="en">
+                                                <a href="{% if slug == 'index' %}.{% else %}{{slug}}.en.html{% endif %}" hreflang="en">
                                                     <img class="option_idiom" src="images/bandeira_usa.png" style="width: 30px; height: 30px; margin-left: 9px; margin-top: 0px;">
                                                 </a>
                                             </div>
@@ -78,16 +75,13 @@
                                 <div><a href="federations.pt.html" class="item-dropdown-mob">Federações e Movimento</a></div>
                             </li>
                             <li><a href="activities.pt.html" class=" links_topo topic-mob" onclick="closeNav()">ATIVIDADES</a></li>
-                            <!-- <li><a href="bookstore.pt.html" class="links_topo topic-mob" onclick="closeNav()">LIVRARIA</a></li> -->
-                            <!-- <li><a href="library.pt.html" class="links_topo topic-mob" onclick="closeNav()">BIBLIOTECA</a></li> -->
-                            <!-- <li><a href="blog.pt.html" class="links_topo topic-mob" onclick="closeNav()">NOTÍCIAS</a></li> -->
                             <li><a href="contact.pt.html" class="links_topo topic-mob" onclick="closeNav()">CONTATO</a></li>
                             <li>
                                 <div style="display:flex;align-items:center;justify-content:center;gap:20px;padding:15px;">
-                                    <a href="groups.pt.html" hreflang="pt">
+                                    <a href="{{slug}}.pt.html" hreflang="pt">
                                         <img src="images/bandeira_brasil.png" style="width: 30px; height: 30px;">
                                     </a>
-                                    <a href="groups.en.html" hreflang="en">
+                                    <a href="{% if slug == 'index' %}.{% else %}{{slug}}.en.html{% endif %}" hreflang="en">
                                         <img src="images/bandeira_usa.png" style="margin-left: 10px; width: 30px; height: 30px;">
                                     </a>
                                 </div>
@@ -95,62 +89,14 @@
                         </ul>
                     </div>
                 </div>
-
             </nav>
         </header>
-	<section id="banner-spiritism">
-		<div class="background-banner-groups">
-			<div class="text-banner-telas">
-                Grupos, centros ou sociedades espíritas			</div>
-		</div>
-	</section>
 
-    <section>
-        <div class="mt50 mb50">
-            <div class="container">
-                <div>“Estes Grupos, correspondendo entre si, visitando-se e transmitindo-se os resultados a que chegaram, podem, ainda agora, formar o núcleo da grande família espírita que um dia reunirá para si todas as opiniões e unirá todos os homens. na fraternidade comum da caridade cristã. ”<br> <span style="color: #456095; font-style: italic;"> Allan Kardec (O Livro dos Médiuns - Cap. XXIX - Item 334)</span></div>
-                <div class="subtitle-main-site mt40">O que eles são</div>
-                <div class="mt10">
-        Os Grupos, Centros ou Sociedades Espíritas são:
-        <ul class="mt10">
-            <li>Núcleos de estudo, de fraternidade, de oração e de trabalho, praticados dentro dos princípios espíritas;</li>
-            <li>Escolas de formação espiritual e moral, que trabalham à luz do Espiritismo;</li>
-            <li>Postos de atendimento fraternal para todos os que os procuram com o propósito de obter orientação, esclarecimento, ajuda ou consolação;</li>
-            <li>Oficinas de trabalho que proporcionam aos seus freqüentadores oportunidades de exercitarem o próprio aprimoramento íntimo pela prática do Evangelho em suas atividades;</li>
-            <li>Casas onde as crianças, os jovens, os adultos e os idosos têm oportunidade de conviver, estudar e trabalhar, unindo a família sob a orientação do Espiritismo;</li>
-            <li>Recantos de paz construtiva, que oferecem aos seus freqüentadores oportunidades para o refazimento espiritual e a união fraternal pela prática do “Amai-vos uns aos outros”;</li>
-            <li>Núcleos que se caracterizam pela simplicidade própria das primeiras casas do Cristianismo nascente, pela prática da caridade e pela total ausência de imagens, símbolos, rituais ou outras quaisquer manifestações exteriores;</li>
-            <li>As unidades fundamentais do Movimento Espírita.</li>
-        </ul></div>
-                <div class="subtitle-main-site mt40">Seus objetivos</div>
-                <div class="mt10">
-        Os Grupos, Centros ou Sociedades Espíritas têm por objetivo promover o estudo, a difusão e a prática do Espiritismo, atendendo às pessoas que:
-        <ul class="mt10">
-            <li>Buscam esclarecimento, orientação e amparo para seus problemas espirituais, morais e materiais;</li>
-            <li>Querem conhecer e estudar o Espiritismo;</li>
-            <li>Querem trabalhar, colaborar e servir em qualquer área de ação que a prática espírita oferece.</li>
-        </ul></div>
-                <div class="subtitle-main-site mt40">Suas atividades básicas</div>
-                <div class="mt10">
-        <p>Os Grupos, Centros ou Sociedades Espíritas têm por atividades básicas:</p>
-        <ul>
-            <li>Realizar reuniões de estudo do Espiritismo, de forma programada, metódica ou sistematizada, destinadas às pessoas de todas as idades e de todos os níveis culturais e sociais, que possibilitem um conhecimento abrangente e aprofundado do Espiritismo em todos os seus aspectos;</li>
-            <li>Realizar reuniões de explanação do Evangelho à luz do Espiritismo, aplicação de passes e atendimento fraterno através do diálogo, para as pessoas que procuram e freqüentam os núcleos espíritas em busca de esclarecimento, orientação, ajuda e assistência espiritual e moral;</li>
-            <li>Realizar reuniões de estudo, educação e prática da mediunidade, com base nos princípios e objetivos espíritas, esclarecendo, orientando e preparando trabalhadores para as atividades mediúnicas;</li>
-            <li>Realizar reuniões de evangelização espírita para crianças e jovens, de forma programada, metódica ou sistematizada, atendendo-os, esclarecendo-os e orientando-os dentro dos ensinos do Espiritismo;</li>
-            <li>Realizar o trabalho de divulgação do Espiritismo através de todos os veículos e meios de comunicação social compatíveis com os princípios espíritas, tais como: palestras, conferências, livros, jornais, revistas, boletins, folhetos, mensagens, rádio, TV, cartazes, fitas de vídeo e áudio;</li>
-            <li>Realizar o serviço de assistência e promoção social espírita destinado a pessoas carentes que buscam ajuda material: assistindo-as em suas necessidades mais imediatas; promovendo-as por meio de cursos e trabalhos de formação profissional e pessoal; e esclarecendo-as com os ensinos morais do Evangelho à luz do Espiritismo;</li>
-            <li>Estimular e orientar os seus freqüentadores para a implantação e manutenção da reunião de estudo do Evangelho no Lar, como apoio para a harmonia espiritual de suas famílias;</li>
-            <li>Participar das atividades que têm por objetivo a união dos espíritas e das Instituições Espíritas e a unificação do Movimento Espírita, conjugando esforços, somando experiências, permutando ajuda e apoio, aprimorando as atividades espíritas e fortalecendo a ação dos espíritas;</li>
-            <li>Realizar as atividades administrativas necessárias ao seu normal funcionamento, compatíveis com a sua estrutura organizacional e com a legislação do seu país.</li>
-        </ul></div>
-            </div>
-        </div>
-    </section>
+{% block content %}{% endblock %}
 
-		<footer>
+        <footer>
             <div class="blue-line"></div>
-			<div class="main-footer">
+            <div class="main-footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-5">
@@ -178,7 +124,6 @@
                                 <a href="https://www.facebook.com/jassgtoronto/" target="_blank"><i class="lab la-facebook-square"></i></a>
                                 <a href="https://instagram.com/joannadeangelisca?igshid=YmMyMTA2M2Y=" target="_blank"><i class="lab la-instagram"></i></a>
                             </div>
-                            <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fjassgtoronto&tabs=timeline&width=280&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="280" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
                         </div>
                     </div>
                 </div>
@@ -186,7 +131,7 @@
             <div class="footer hidden-xs hidden-sm">
                 <div class="container">
                     <div class="ai_center jc_between">
-                        <div>© Copyright 2025 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <div>© Copyright {{year}} - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
                         <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
                     </div>
                 </div>
@@ -194,18 +139,17 @@
             <div class="footer hidden-md hidden-lg">
                 <div class="container">
                     <div class="ai_center jc_between fd_column text-center">
-                        <div>© Copyright 2025 - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
+                        <div>© Copyright {{year}} - <b>JOANNA DE ÂNGELIS</b> - Todos os Direitos Reservados</div>
                         <a href="https://prideinnovations.com.br/" target="_blank" rel="noopener noreferrer"><img src="images/innovations-white.svg" class="logo_rodape"></a>
                     </div>
                 </div>
             </div>
-		</footer>
+        </footer>
 
-		<!-- JS IMPORTS -->
+        <!-- JS IMPORTS -->
         <script type="text/javascript" src="js/jquery.min.js"></script> <!-- jQuery -->
         <script type="text/javascript" src="js/jquery.mask.min.js"></script> <!-- jQuery -->
         <script type="text/javascript" src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
-        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v4.0"></script> <!-- Facebook Iframe -->
         <script type="text/javascript" src="js/footer.js"></script> <!-- Custom footer scripts -->
     </body>
 </html>
