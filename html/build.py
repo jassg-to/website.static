@@ -22,18 +22,15 @@ def main():
         if file.name.startswith("_"):
             continue
 
-        # infer values for {{slug}} and {{lang}} from filename if possible
+        # infer value for {{slug}} from filename if possible
         parts = file.name.split(".")
-        if len(parts) == 3 and len(parts[1]) == 2:
-            slug, lang, _ = parts
-        else:
-            slug, lang = "index", "en"
+        slug = parts[0] if len(parts) == 3 and len(parts[1]) == 2 else "index"
 
         # run template and save results
         template = environment.get_template(file.name)
-        output = template.render(slug=slug, lang=lang)
-        with open(destination_folder / file.name, "w") as f:
-            f.write(output)
+        output = template.render(slug=slug)
+        path = destination_folder / file.name
+        path.write_text(output)
 
 
 if __name__ == "__main__":
