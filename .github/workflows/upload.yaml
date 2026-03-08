@@ -33,7 +33,7 @@ jobs:
         run: uv run html/build.py
 
       - name: Clean up nonpublic files
-        run: rm -rf html
+        run: rm -rf html CLAUDE.md
 
       - name: Upload files
         run: aws s3 sync --exclude ".*" --delete --only-show-errors . s3://jassg.ca/
