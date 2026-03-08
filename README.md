@@ -98,7 +98,8 @@ The workflow:
    git push -u origin my-change-name
    ```
 4. **Open a pull request** — go to the repository on GitHub and you'll see a prompt to create a PR from your branch. Add a short description of what you changed and submit it.
-5. Once the PR is **approved and merged** into `main`, the site is automatically built and deployed to [Firebase Hosting](https://firebase.google.com/docs/hosting). A GitHub Actions workflow handles all of that — you don't need to do anything after merging.
+5. **Preview your changes** — once the PR is created, a preview version of the site is automatically deployed to [Firebase Hosting](https://firebase.google.com/docs/hosting). A bot will post a comment with a link to the preview so you can check everything looks right before merging. The preview link expires after 7 days.
+6. Once the PR is **approved and merged** into `main`, the real site is automatically updated. It takes 2 to 5 minutes for the process to complete.
 
 ### Template variables
 
