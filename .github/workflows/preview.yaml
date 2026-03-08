@@ -1,0 +1,32 @@
+name: Firebase Hosting Preview
+
+on:
+  pull_request:
+    branches: [ main ]
+
+permissions:
+  checks: write
+  contents: read
+  pull-requests: write
+
+jobs:
+  preview:
+    runs-on: ubuntu-latest
+    steps:
+
+      - name: Git clone the repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v5
+
+      - name: Run the HTML templates
+        run: uv run html/build.py
+
+      - name: Deploy preview to Firebase
+        uses: FirebaseExtended/action-hosting-deploy@v0
+        with:
+          repoToken: ${{ secrets.GITHUB_TOKEN }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT }}
+          projectId: jassg-website
+          expires: 7d
