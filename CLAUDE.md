@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-Bilingual (English/Portuguese) static website for JASSG (Joanna de Ângelis Spiritist Study Group). Uses Jinja2 templates compiled to static HTML, deployed to AWS S3/CloudFront.
+Bilingual (English/Portuguese) static website for JASSG (Joanna de Ângelis Spiritist Study Group). Uses Jinja2 templates compiled to static HTML, deployed to Firebase Hosting.
 
 ## Build
 
@@ -16,7 +16,7 @@ This processes all `html/*.html` Jinja2 templates (skipping `_`-prefixed files) 
 
 ## Deployment
 
-Push to `main` triggers GitHub Actions (`/.github/workflows/upload.yaml`) which builds, syncs to S3 (`jassg.ca`), and invalidates CloudFront cache.
+Push to `main` triggers GitHub Actions (`/.github/workflows/upload.yaml`) which builds and deploys to Firebase Hosting (project: `jassg-website`). For manual deploys: `firebase deploy`.
 
 ## Architecture
 
