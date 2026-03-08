@@ -30,7 +30,7 @@ def main():
         template = environment.get_template(file.name)
         output = template.render(slug=slug)
         path = destination_folder / file.name
-        path.write_text(output)
+        path.write_text(output, encoding="utf-8", newline="\n")
 
 
 if __name__ == "__main__":
