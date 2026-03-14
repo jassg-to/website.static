@@ -2,6 +2,7 @@
 /.claude/
 /.firebase/
 /.vscode/
+*.log
 
 # generated files
 /*.html
